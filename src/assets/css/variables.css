@@ -12,5 +12,10 @@
   --black-200: #1a1a2a;
   --gray-400: #fafafb;
   --sea-blue-100: #0267ff;
+  --red: #ff0000;
+  --success-700: #99f599;
   
+
+  /* utilities */
+  --shadow: 0 1px 3px 1px rgba(0,0,0,0.15);
 }

@@ -1,0 +1,85 @@
+.alert {
+  width: 90%;
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--white);
+  border-radius: 8px;
+  padding: 10px 12px;
+  border: 1px solid transparent;
+  box-shadow: var(--shadow);
+  display: none;
+}
+
+.show {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.alertDanger {
+  border-color: var(--red);
+  color: var(--red);
+}
+
+.alertSuccess {
+  border-color: var(--success-700);
+  color: var(--success-700);
+}
+
+.alertInfo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.alertIcon {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  line-height: 20px;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 18px;
+  border: inherit;
+}
+
+.alertDanger .alertIcon {
+  border: 1px solid var(--red);
+}
+
+.alertSuccess .alertIcon {
+  border: 1px solid var(--success-700);
+}
+
+.alertBtn {
+  border: none;
+  color: inherit;
+  width: 24px;
+  height: 24px;
+  font: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.alertBtn i {
+  font-size: 24px;
+}
+
+@media (min-width: 768px) {
+  .alert {
+    width: 554px;
+  }
+}
+
+@media (min-width: 992px) {
+  .alert {
+    padding: 12px 16px;
+  }
+
+  .alertInfo {
+    gap: 16px;
+  }
+}
