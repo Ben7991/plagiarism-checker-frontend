@@ -1,12 +1,16 @@
 :root {
-  --ff-branc: "Holtwood One SC";
+  /* font */
+  --ff-brand: "Holtwood One SC";
   --ff-regular: "Archivo";
   --fw-regular: 400;
   --fw-semibold: 600;
   --fw-bold: 700;
 
+  /* colors */
+  --white: #fff;
   --black-300: #333441;
   --black-200: #1a1a2a;
-
   --gray-400: #fafafb;
+  --sea-blue-100: #0267ff;
+  
 }
