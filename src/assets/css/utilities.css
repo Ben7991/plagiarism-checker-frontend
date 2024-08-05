@@ -1,2 +1,8 @@
 /* margins */
 .mb-1 { margin-bottom: 8px; }
+
+.gap-16 {gap: 16px;}
+
+@media (min-width: 768px) {
+  .mb-md-2 { margin-bottom: 16px; }
+}
