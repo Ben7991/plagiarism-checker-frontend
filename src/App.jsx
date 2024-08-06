@@ -5,7 +5,6 @@ import DashboardLayout from "./components/templates/DashboardLayout/DashboardLay
 
 // auth pages
 import Login from "./pages/auth/Login/Login";
-import Register from "./pages/auth/Register/Register";
 import ForgotPassword from "./pages/auth/ForgotPassword/ForgotPassword";
 import ResetPassword from "./pages/auth/ResetPassword/ResetPassword";
 
@@ -23,7 +22,6 @@ export default function App() {
       element: <AuthLayout />,
       children: [
         { index: true, element: <Login /> },
-        { path: "register", element: <Register /> },
         { path: "forgot-password", element: <ForgotPassword /> },
         { path: "reset-password", element: <ResetPassword /> },
       ] 
