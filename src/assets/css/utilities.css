@@ -1,7 +1,26 @@
 /* margins */
 .mb-1 { margin-bottom: 8px; }
+.mb-2 { margin-bottom: 16px; }
 
 .gap-16 {gap: 16px;}
+.gap-8 {gap: 8px;}
+
+.flex { display: flex; }
+.flex-column { flex-direction: column; }
+
+.justify-content-between { justify-content: space-between; }
+
+.align-items-center { align-items: center; }
+
+.link {
+  font-size: 0.875em;
+  text-decoration: none;
+  color: var(--sea-blue-100);
+}
+
+.link:hover {
+  text-decoration: underline;
+}
 
 @media (min-width: 768px) {
   .mb-md-2 { margin-bottom: 16px; }
