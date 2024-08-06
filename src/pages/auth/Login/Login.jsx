@@ -55,7 +55,7 @@ export default function Login() {
         </div>
 
         <div className="flex flex-column">
-          <Button title="Login" variant="primary" />
+          <Button variant="primary" type="submit">Login</Button>
         </div>
       </form>
     </>
