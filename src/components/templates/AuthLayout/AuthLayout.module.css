@@ -1,0 +1,29 @@
+.main {
+  background-color: var(--gray-400);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainContent {
+  background-color: var(--white);
+  flex-basis: 90%;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+@media (min-width: 600px) {
+  .mainContent {
+    flex-basis: 471px;
+  }
+}
+
+@media (min-width: 992px) {
+  .mainContent {
+    padding: 32px;
+    border-radius: 16px;
+  }
+}
