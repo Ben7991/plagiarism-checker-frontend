@@ -7,7 +7,7 @@ export default function AuthLayout() {
   return (
     <main className={styles.main}>
       <section className={styles.mainContent}>
-        <div className="mb-1">
+        <div className="mb-2">
           <AppLogo />
         </div>
         <Outlet />
