@@ -6,16 +6,32 @@
   padding-bottom: 12px;
   border-radius: 8px;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .primary {
   background-color: var(--sea-blue-100);
-  color: var(--white);
+  color: var(--white) !important;
+}
+
+.secondary {
+  background-color: transparent;
+  border: 1px solid var(--gray-700);
+  padding-top: 9px;
+  padding-bottom: 9px;
+  color: var(--black-300);
 }
 
 @media (min-width: 1200px) {
   .btn {
     padding-top: 17px;
     padding-bottom: 17px;
+  }
+
+  .secondary {
+    background-color: transparent;
+    border: 1px solid var(--gray-700);
+    padding-top: 13px;
+    padding-bottom: 13px;
   }
 }

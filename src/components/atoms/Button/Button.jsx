@@ -1,6 +1,7 @@
+import { Link } from "react-router-dom";
 import styles from "./Button.module.css";
 
-export default function Button({title, variant}) {
+export default function Button({type, variant, link, path, children}) {
   let styleVariant = "";
 
   if (variant === "primary") {
@@ -10,7 +11,15 @@ export default function Button({title, variant}) {
     styleVariant = styles.secondary;
   }
 
+  if (link) {
+    return (
+      <Link to={path} className={`${styles.btn} ${styleVariant}`}>{children}</Link>
+    )
+  }
+
   return (
-    <button className={`${styles.btn} ${styleVariant}`}>{title}</button>
+    <button className={`${styles.btn} ${styleVariant}`} type={type}>
+      {children}
+    </button>
   );
 }
