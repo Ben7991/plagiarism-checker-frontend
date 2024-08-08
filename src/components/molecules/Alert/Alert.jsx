@@ -1,6 +1,6 @@
 import styles from "./Alert.module.css";
 
-export default function Alert({ variant, show }) {
+export default function Alert({ variant, show, message }) {
   let styleVariant = "";
   let icon = "";
 
@@ -19,7 +19,7 @@ export default function Alert({ variant, show }) {
         <span className={styles.alertIcon}>
           <i className={`bi bi-${icon}`}></i>
         </span>
-        <p>Wrong credentials</p>
+        <p>{message}</p>
       </div>
       <button className={styles.alertBtn}>
         <i className="bi bi-x"></i>
