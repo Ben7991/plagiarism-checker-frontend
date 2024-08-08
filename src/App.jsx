@@ -15,6 +15,9 @@ import AcademicDivision from "./pages/dashboard/AcademicDivision/AcademicDivisio
 import AccountSettings from "./pages/dashboard/AccountSettings/AccountSettings";
 import ManageUsers from "./pages/dashboard/ManageUsers/ManageUsers";
 
+// providers
+import StoreProvider from "./store/providers/store.provider";
+
 export default function App() {
   const appRouter = createBrowserRouter([
     { 
@@ -39,5 +42,9 @@ export default function App() {
     }
   ]);
 
-  return <RouterProvider router={appRouter}/>
+  return (
+    <StoreProvider>
+      <RouterProvider router={appRouter}/>
+    </StoreProvider>
+  );
 }
